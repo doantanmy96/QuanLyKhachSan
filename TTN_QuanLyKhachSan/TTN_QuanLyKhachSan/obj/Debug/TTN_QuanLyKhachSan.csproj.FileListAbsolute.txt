@@ -84,3 +84,6 @@ C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLy
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
 >>>>>>> 5b91abfe87399dcf09fe11d29eb2e76f06daecbf
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
