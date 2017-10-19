@@ -75,6 +75,12 @@ D:\c#\ttnhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\
 D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
 D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
+<<<<<<< HEAD
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
+=======
+C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
+C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
+C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
+>>>>>>> 5b91abfe87399dcf09fe11d29eb2e76f06daecbf
