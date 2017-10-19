@@ -72,7 +72,7 @@
             this.lstDanhSachNV.Name = "lstDanhSachNV";
             this.lstDanhSachNV.Size = new System.Drawing.Size(161, 409);
             this.lstDanhSachNV.TabIndex = 0;
-            
+            this.lstDanhSachNV.SelectedIndexChanged += new System.EventHandler(this.lstDanhSachNV_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -98,7 +98,7 @@
             this.btnXoaTT.TabIndex = 8;
             this.btnXoaTT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaTT.UseVisualStyleBackColor = true;
-            
+            this.btnXoaTT.Click += new System.EventHandler(this.btnXoaTT_Click);
             // 
             // btnLuu
             // 
@@ -111,7 +111,7 @@
             this.btnLuu.TabIndex = 8;
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
-           
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoaTK
             // 
@@ -123,7 +123,7 @@
             this.btnXoaTK.Size = new System.Drawing.Size(105, 59);
             this.btnXoaTK.TabIndex = 10;
             this.btnXoaTK.UseVisualStyleBackColor = true;
-          
+            this.btnXoaTK.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThemTK
             // 
@@ -136,7 +136,7 @@
             this.btnThemTK.Size = new System.Drawing.Size(105, 59);
             this.btnThemTK.TabIndex = 9;
             this.btnThemTK.UseVisualStyleBackColor = true;
-          
+            this.btnThemTK.Click += new System.EventHandler(this.btnThemTK_Click);
             // 
             // groupBox2
             // 
@@ -176,7 +176,7 @@
             this.txtDiaChi.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDiaChi.Size = new System.Drawing.Size(231, 65);
             this.txtDiaChi.TabIndex = 7;
-          
+            this.txtDiaChi.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // label7
             // 
@@ -193,7 +193,7 @@
             this.txtSoDT.Name = "txtSoDT";
             this.txtSoDT.Size = new System.Drawing.Size(231, 26);
             this.txtSoDT.TabIndex = 6;
-         
+            this.txtSoDT.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // label6
             // 
@@ -210,7 +210,7 @@
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(231, 26);
             this.txtCMND.TabIndex = 5;
-           
+            this.txtCMND.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // dtpNgaySinh
             // 
@@ -219,7 +219,7 @@
             this.dtpNgaySinh.Size = new System.Drawing.Size(161, 26);
             this.dtpNgaySinh.TabIndex = 3;
             this.dtpNgaySinh.Value = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-           
+            this.dtpNgaySinh.ValueChanged += new System.EventHandler(this.dtpNgaySinh_ValueChanged);
             // 
             // cboGioiTinh
             // 
@@ -231,7 +231,7 @@
             this.cboGioiTinh.Name = "cboGioiTinh";
             this.cboGioiTinh.Size = new System.Drawing.Size(121, 27);
             this.cboGioiTinh.TabIndex = 4;
-           
+            this.cboGioiTinh.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // label5
             // 
@@ -266,7 +266,7 @@
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(231, 26);
             this.txtHoTen.TabIndex = 2;
-          
+            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // groupBox1
             // 
@@ -292,7 +292,7 @@
             this.chkAD.TabIndex = 3;
             this.chkAD.Text = "ADMIN";
             this.chkAD.UseVisualStyleBackColor = true;
-         
+            this.chkAD.CheckedChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // btnDoiMK
             // 
@@ -302,7 +302,7 @@
             this.btnDoiMK.TabIndex = 2;
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = true;
-          
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // txtPass
             // 
@@ -349,7 +349,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmQuanLyNguoiDung";
             this.Text = "Quản lý người dùng";
-        
+            this.Load += new System.EventHandler(this.frmQuanLyNguoiDung_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
