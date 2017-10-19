@@ -125,7 +125,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Hủy";
             this.button2.UseVisualStyleBackColor = true;
-          
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnThue
             // 
@@ -135,7 +135,7 @@
             this.btnThue.TabIndex = 4;
             this.btnThue.Text = "Thuê phòng";
             this.btnThue.UseVisualStyleBackColor = true;
-          
+            this.btnThue.Click += new System.EventHandler(this.btnThue_Click);
             // 
             // cmbKhachhang
             // 
@@ -144,7 +144,8 @@
             this.cmbKhachhang.Name = "cmbKhachhang";
             this.cmbKhachhang.Size = new System.Drawing.Size(121, 21);
             this.cmbKhachhang.TabIndex = 0;
-            
+            this.cmbKhachhang.SelectedIndexChanged += new System.EventHandler(this.cmbKhachhang_SelectedIndexChanged);
+            // 
             // ckcChuabiet
             // 
             this.ckcChuabiet.AutoSize = true;
@@ -154,7 +155,7 @@
             this.ckcChuabiet.TabIndex = 12;
             this.ckcChuabiet.Text = "Chưa biết";
             this.ckcChuabiet.UseVisualStyleBackColor = true;
-         
+            this.ckcChuabiet.CheckedChanged += new System.EventHandler(this.ckcChuabiet_CheckedChanged);
             // 
             // cmbPhuongthuc
             // 
@@ -163,7 +164,9 @@
             this.cmbPhuongthuc.Name = "cmbPhuongthuc";
             this.cmbPhuongthuc.Size = new System.Drawing.Size(121, 21);
             this.cmbPhuongthuc.TabIndex = 1;
-            
+            this.cmbPhuongthuc.SelectedIndexChanged += new System.EventHandler(this.cmbPhuongthuc_SelectedIndexChanged);
+            this.cmbPhuongthuc.TextChanged += new System.EventHandler(this.cmbPhuongthuc_SelectedIndexChanged);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -294,7 +297,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmThuePhong";
             this.Text = "Thuê phòng";
-           
+            this.Load += new System.EventHandler(this.frmThuePhong_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

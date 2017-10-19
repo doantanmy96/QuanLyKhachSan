@@ -144,7 +144,7 @@
             this.dgvDanhSach.Name = "dgvDanhSach";
             this.dgvDanhSach.Size = new System.Drawing.Size(409, 135);
             this.dgvDanhSach.TabIndex = 2;
-            
+            this.dgvDanhSach.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellClick);
             // 
             // toolStrip1
             // 
@@ -202,7 +202,7 @@
             this.btnThem.Size = new System.Drawing.Size(50, 23);
             this.btnThem.Text = "Thêm";
             this.btnThem.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
@@ -210,7 +210,7 @@
             this.btnSua.Size = new System.Drawing.Size(50, 23);
             this.btnSua.Text = "Sửa";
             this.btnSua.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -218,7 +218,7 @@
             this.btnXoa.Size = new System.Drawing.Size(50, 23);
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
@@ -226,7 +226,7 @@
             this.btnLuu.Size = new System.Drawing.Size(50, 23);
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnLamMoi
             // 
@@ -234,7 +234,7 @@
             this.btnLamMoi.Size = new System.Drawing.Size(80, 23);
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnThoat
             // 
@@ -242,7 +242,7 @@
             this.btnThoat.Size = new System.Drawing.Size(50, 23);
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // colMaPhong
             // 
@@ -274,7 +274,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPhong";
             this.Text = "Quản lý phòng";
-            
+            this.Load += new System.EventHandler(this.frmPhong_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
