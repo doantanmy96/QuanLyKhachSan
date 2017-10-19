@@ -76,6 +76,11 @@ D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin
 D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
 <<<<<<< HEAD
+D:\GITHUB\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
+D:\GITHUB\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
+D:\GITHUB\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
+=======
+<<<<<<< HEAD
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
@@ -84,3 +89,10 @@ C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLy
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
 >>>>>>> 5b91abfe87399dcf09fe11d29eb2e76f06daecbf
+<<<<<<< HEAD
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
+=======
+>>>>>>> d213e9d6c6946909b7594af21638d343522b9c67
+>>>>>>> e1bdf79dcfef3596a5ef9dc37333fd46d7fb2423
