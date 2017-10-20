@@ -84,7 +84,7 @@
             this.dgvDanhSach.Size = new System.Drawing.Size(488, 145);
             this.dgvDanhSach.TabIndex = 9;
             this.dgvDanhSach.TabStop = false;
-        
+            this.dgvDanhSach.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellEnter);
             // 
             // MaDV
             // 
@@ -148,13 +148,14 @@
             this.txtTimMa.Name = "txtTimMa";
             this.txtTimMa.Size = new System.Drawing.Size(99, 25);
             this.txtTimMa.Tag = "";
+            this.txtTimMa.TextChanged += new System.EventHandler(this.txtTimMa_TextChanged);
             // 
             // txtTimTen
             // 
             this.txtTimTen.Name = "txtTimTen";
             this.txtTimTen.Size = new System.Drawing.Size(199, 25);
             this.txtTimTen.Tag = "";
-            
+            this.txtTimTen.TextChanged += new System.EventHandler(this.txtTimTen_TextChanged);
             // 
             // btnReset
             // 
@@ -164,7 +165,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(39, 22);
             this.btnReset.Text = "Reset";
-            
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panel1
             // 
@@ -195,7 +196,7 @@
             this.btnLuu.TabIndex = 5;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
-            
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -205,7 +206,7 @@
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
-            
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -215,7 +216,7 @@
             this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
-            
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -225,7 +226,7 @@
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
-            
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label4
             // 
@@ -298,7 +299,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Name = "frmQuanLyDV";
             this.Text = "Quản lý dịch vụ";
-            
+            this.Load += new System.EventHandler(this.frmQuanLyDV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSach)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
