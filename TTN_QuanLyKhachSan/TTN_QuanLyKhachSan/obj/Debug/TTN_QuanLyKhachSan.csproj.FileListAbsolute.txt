@@ -92,3 +92,4 @@ E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_
 E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
 >>>>>>> d213e9d6c6946909b7594af21638d343522b9c67
 >>>>>>> e1bdf79dcfef3596a5ef9dc37333fd46d7fb2423
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.csprojResolveAssemblyReference.cache
