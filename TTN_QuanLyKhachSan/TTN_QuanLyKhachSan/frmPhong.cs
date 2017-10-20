@@ -21,35 +21,7 @@ namespace TTN_QuanLyKhachSan
         private DataTable tblPhong = new DataTable();
         private bool themmoi;
 
-        private void SetNull()
-        {
-            txtMaPhong.Text = "";
-            txtSoPhong.Text = "";
-            txtTrangThai.Text = "";
-        }
-
-        private void KhoaChucNang()
-        {
-            btnLamMoi.Enabled = false;
-            btnLuu.Enabled = false;
-            txtMaPhong.ReadOnly = true;
-            txtSoPhong.ReadOnly = true;
-            txtTrangThai.ReadOnly = true;
-        }
-
-        private void MoChucNang()
-        {
-            btnLamMoi.Enabled = true;
-            btnLuu.Enabled = true;
-            txtMaPhong.ReadOnly = false;
-            txtSoPhong.ReadOnly = false;
-            txtTrangThai.ReadOnly = false;
-        }
-
-        private void HienThi(string where)
-        {
-            dgvDanhSach.DataSource = dal_Ph.TaoBang(where);
-        }
+        p
         public frmPhong()
         {
             InitializeComponent();
