@@ -47,7 +47,7 @@
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(151, 26);
             this.txtMa.TabIndex = 0;
-            
+            this.txtMa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDangNhap_KeyDown);
             // 
             // txtPass
             // 
@@ -57,7 +57,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(151, 26);
             this.txtPass.TabIndex = 1;
-            
+            this.txtPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDangNhap_KeyDown);
             // 
             // btn_DangNhap
             // 
@@ -67,7 +67,7 @@
             this.btn_DangNhap.TabIndex = 2;
             this.btn_DangNhap.Text = "Đăng nhập";
             this.btn_DangNhap.UseVisualStyleBackColor = true;
-            
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // label1
             // 
@@ -95,7 +95,7 @@
             this.frmThoat.TabIndex = 3;
             this.frmThoat.Text = "Thoát";
             this.frmThoat.UseVisualStyleBackColor = true;
-            
+            this.frmThoat.Click += new System.EventHandler(this.frmThoat_Click);
             // 
             // pictureBox1
             // 
@@ -116,7 +116,7 @@
             this.chkHienMK.TabIndex = 5;
             this.chkHienMK.Text = "Hiện mật khẩu";
             this.chkHienMK.UseVisualStyleBackColor = true;
-            
+            this.chkHienMK.CheckedChanged += new System.EventHandler(this.chkLuuTK_CheckedChanged);
             // 
             // frmDangNhap
             // 
@@ -135,7 +135,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDangNhap";
             this.Text = "Đăng nhập";
-                        ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
