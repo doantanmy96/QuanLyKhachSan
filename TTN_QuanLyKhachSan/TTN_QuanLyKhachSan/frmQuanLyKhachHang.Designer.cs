@@ -116,7 +116,7 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = true;
-            
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // cbGT
             // 
@@ -155,7 +155,7 @@
             this.btnDel.Text = "Xóa";
             this.btnDel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDel.UseVisualStyleBackColor = true;
-            
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // txtDiaChi
             // 
@@ -176,7 +176,7 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRefresh.UseVisualStyleBackColor = true;
-            
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnEdit
             // 
@@ -189,7 +189,7 @@
             this.btnEdit.Text = "Sửa";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEdit.UseVisualStyleBackColor = true;
-            
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSave
             // 
@@ -202,7 +202,7 @@
             this.btnSave.Text = "Lưu";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
-            
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnAdd
             // 
@@ -215,7 +215,7 @@
             this.btnAdd.Text = "Thêm";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.UseVisualStyleBackColor = true;
-            
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtCMND
             // 
@@ -391,7 +391,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmQuanLyKhachHang";
             this.Text = "Quản Lý Khách Hàng";
-            
+            this.Load += new System.EventHandler(this.frmQuanLyKhachHang_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
