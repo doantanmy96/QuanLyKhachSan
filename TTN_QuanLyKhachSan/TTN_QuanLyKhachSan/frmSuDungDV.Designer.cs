@@ -159,7 +159,7 @@
             this.btnLuu.TabIndex = 4;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
-           
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label2
             // 
@@ -187,7 +187,7 @@
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
-           
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label4
             // 
@@ -207,7 +207,8 @@
             this.cboDichVu.Name = "cboDichVu";
             this.cboDichVu.Size = new System.Drawing.Size(158, 23);
             this.cboDichVu.TabIndex = 2;
-        
+            this.cboDichVu.SelectedIndexChanged += new System.EventHandler(this.cboDichVu_SelectedIndexChanged);
+            this.cboDichVu.Validated += new System.EventHandler(this.cboDichVu_Validated);
             // 
             // label3
             // 
@@ -227,7 +228,8 @@
             this.cboPhong.Name = "cboPhong";
             this.cboPhong.Size = new System.Drawing.Size(102, 23);
             this.cboPhong.TabIndex = 1;
-          
+            this.cboPhong.SelectedIndexChanged += new System.EventHandler(this.cboPhong_TextChanged);
+            this.cboPhong.Validated += new System.EventHandler(this.cboPhong_Validated);
             // 
             // btnThem
             // 
@@ -237,7 +239,7 @@
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
-       
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // toolStrip1
             // 
@@ -263,13 +265,13 @@
             // 
             this.txtTimPhong.Name = "txtTimPhong";
             this.txtTimPhong.Size = new System.Drawing.Size(69, 25);
-         
+            this.txtTimPhong.TextChanged += new System.EventHandler(this.txtTimPhong_TextChanged);
             // 
             // txtTimDV
             // 
             this.txtTimDV.Name = "txtTimDV";
             this.txtTimDV.Size = new System.Drawing.Size(148, 25);
-          
+            this.txtTimDV.TextChanged += new System.EventHandler(this.txtTimDV_TextChanged);
             // 
             // btnReset
             // 
@@ -279,7 +281,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(39, 22);
             this.btnReset.Text = "Reset";
-        
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panel2
             // 
@@ -360,7 +362,7 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
-         
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmSuDungDV
             // 
@@ -372,7 +374,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Name = "frmSuDungDV";
             this.Text = "Sử dụng dịch vụ";
-          
+            this.Load += new System.EventHandler(this.frmSuDungDV_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
