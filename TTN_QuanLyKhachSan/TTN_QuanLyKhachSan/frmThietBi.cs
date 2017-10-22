@@ -14,7 +14,10 @@ namespace TTN_QuanLyKhachSan
 {
     public partial class frmThietBi : Form
     {
-        
+        private DAL_ThietBi dal_tb = new DAL_ThietBi();
+        private EC_ThietBi ec = new EC_ThietBi();
+        private DataTable tblThietBi = new DataTable();
+        private bool themmoi;
         void SetNull()
         {
             cboMaPh.Text = "";
@@ -22,7 +25,106 @@ namespace TTN_QuanLyKhachSan
             txtSoLuong.Text = "";
             txtNhaSanXuat.Text = "";
         }
-      
+        private void KhoaDieuKhien()
+        {
+            cboMaPh.Enabled = false;
+            txtThietBi.ReadOnly = true;
+            txtSoLuong.ReadOnly = true;
+            txtNhaSanXuat.ReadOnly = true;
+
+            btnThem.Enabled = true;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            btnLuu.Enabled = false;
+
+        }
+        private void MoDieuKhien()
+        {
+            cboMaPh.Enabled = true;
+            txtThietBi.ReadOnly = false;
+            txtSoLuong.ReadOnly = false;
+            txtNhaSanXuat.ReadOnly = false;
+        }
+        private void HienThi(string where)
+        {
+            dgvDanhSach.DataSource = dal_tb.TaoBang(where);
+        }
+        private void DoDLMaLop()
+        {
+
+            cboMaPh.DataSource = dal_tb.TruyVanRaMaPh("");
+            cboMaPh.DisplayMember = "MaPh";
+        }
+        public frmThietBi()
+        {
+            InitializeComponent();
+        }
+
+        private void frmThietBi_Load(object sender, EventArgs e)
+        {
+            HienThi("");
+            KhoaDieuKhien();
+            DoDLMaLop();
+        }
+
+       
+
+        
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            //kich hoat cac chuc năng
+            btnThem.Enabled = false;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+            MoDieuKhien();
+            txtThietBi.ReadOnly = true;
+            cboMaPh.Enabled = false;
+            themmoi = false;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult xacnhan;
+            xacnhan = MessageBox.Show("Bạn có chắc chắn muốn xóa không??", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (xacnhan == DialogResult.OK)
+            {
+                ec.MaPh = cboMaPh.Text;
+                ec.ThietBi = txtThietBi.Text;
+                if (dal_tb.XoaTTThietBi(ec) == 0)
+                {
+
+                    MessageBox.Show("Không thể xoá!!!", "Thông báo???", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    dal_tb.XoaTTThietBi(ec);
+                    MessageBox.Show("Đã xóa thành công!");
+                    btnCapNhap_Click(sender, e);
+                    SetNull();
+
+                }
+            }
+        }
+
+       
+        private void btnCapNhap_Click(object sender, EventArgs e)
+        {
+            DataTable tbl = dal_tb.TaoBang("");
+            dgvDanhSach.DataSource = tbl;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Close();
+            Dispose();
+        }
+
+        private void cboMaPh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
     }
 }
