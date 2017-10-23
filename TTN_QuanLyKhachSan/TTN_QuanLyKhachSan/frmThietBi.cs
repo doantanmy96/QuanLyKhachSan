@@ -67,9 +67,34 @@ namespace TTN_QuanLyKhachSan
             DoDLMaLop();
         }
 
-       
+        private void dgvDanhSach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
 
-        
+                int dong = e.RowIndex;/*biến dòng :kich vào dòng thì chỉ số dòng đc lưu vào biến dòng */
+                cboMaPh.Text = dgvDanhSach.Rows[dong].Cells[0].Value.ToString();
+                txtThietBi.Text = dgvDanhSach.Rows[dong].Cells[1].Value.ToString();
+                txtSoLuong.Text = dgvDanhSach.Rows[dong].Cells[2].Value.ToString();
+                txtNhaSanXuat.Text = dgvDanhSach.Rows[dong].Cells[3].Value.ToString();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            //kich hoat cac chuc năng
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+            txtThietBi.Focus();
+            MoDieuKhien();
+            SetNull();
+            themmoi = true;
+        }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
@@ -108,7 +133,62 @@ namespace TTN_QuanLyKhachSan
             }
         }
 
-       
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (txtThietBi.Text == "" || txtSoLuong.Text == "" || txtNhaSanXuat.Text == "" || cboMaPh.Text == "")
+            {
+                MessageBox.Show("Xin mời nhập thông tin đầy đủ");
+                KhoaDieuKhien();
+                return;
+            }
+            else
+            {
+                if (themmoi == true)/*đang ở trang thái thêm mới*/
+                {
+                    try
+                    {
+                        ec.ThietBi = txtThietBi.Text;
+                        ec.MaPh = cboMaPh.Text;
+                        ec.SoLuong = int.Parse(txtSoLuong.Text);
+                        ec.NhaSanXuat = txtNhaSanXuat.Text;
+
+                        dal_tb.ThemThongTin(ec);
+                        MessageBox.Show("Đã thêm mới thành công");/*dòng thông báo*/
+                        btnCapNhap_Click(sender, e);
+                        SetNull();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Lỗi");
+                        return;
+                    }
+
+                }
+                else
+                {
+                    try
+                    {
+                        ec.ThietBi = txtThietBi.Text;
+                        ec.MaPh = cboMaPh.Text;
+                        ec.SoLuong = int.Parse(txtSoLuong.Text);
+                        ec.NhaSanXuat = txtNhaSanXuat.Text;
+                        dal_tb.SuaThongTin(ec);
+                        MessageBox.Show("Đã sửa thành công");
+                        btnCapNhap_Click(sender, e);
+                        SetNull();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Lỗi");
+                        return;
+                    }
+                }
+                SetNull();
+                KhoaDieuKhien();/*không cho thao tác*/
+                HienThi("");
+            }
+        }
+
         private void btnCapNhap_Click(object sender, EventArgs e)
         {
             DataTable tbl = dal_tb.TaoBang("");
