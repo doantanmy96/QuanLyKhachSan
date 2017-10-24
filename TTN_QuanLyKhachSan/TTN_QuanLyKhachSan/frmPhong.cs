@@ -20,25 +20,6 @@ namespace TTN_QuanLyKhachSan
         private EC_Phong ec_Ph = new EC_Phong();
         private DataTable tblPhong = new DataTable();
         private bool themmoi;
-        public int SuaThongTin(EC_ThietBi EC_ThietBi)
-        {
-            return connect.ThucHienLenh("update tblThietBi set SoLuong='" + EC_ThietBi.SoLuong + "',NhaSanXuat=N'" + EC_ThietBi.NhaSanXuat + "' where MaPh=N'" + EC_ThietBi.MaPh + "' and ThietBi=N'" + EC_ThietBi.ThietBi + "'");
-        }
-
-        public int XoaTTThietBi(EC_ThietBi EC_ThietBi)
-        {
-            return connect.ThucHienLenh("delete from tblThietBi where MaPh=N'" + EC_ThietBi.MaPh + "' and ThietBi=N'" + EC_ThietBi.ThietBi + "'");
-
-        }
-        public DataTable TaoBang(string DieuKien)
-        {
-            return connect.GetDataTable(@"SELECT * FROM tblThietBi " + DieuKien);
-        }
-        public DataTable TruyVanRaMaPh(string DieuKien)
-        {
-            return connect.GetDataTable(@"SELECT MaPh from tblPhong " + DieuKien);
-        }
-
 
         private void SetNull()
         {
