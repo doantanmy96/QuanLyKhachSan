@@ -41,32 +41,7 @@ namespace TTN_QuanLyKhachSan
 
         }
 
-        private void cmbKhachhang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //load Hoadon
-            DataTable tb = cn.GetDataTable("Select distinct h.MaHD from tblKhachHang k, tblHoaDon h, tblPhieuThue p where k.MaKH = p.MaKH and p.MaPhieu = h.MaPhieuThue and h.ThanhTien = 0 and k.MaKH='" + cmbKhachhang.SelectedValue.ToString() + "'");
-            cmbMahd.DataSource = tb;
-            cmbMahd.DisplayMember = "MaHD";
-        }
-
-        private void cmbMahd_TextChanged(object sender, EventArgs e)
-        {
-            //load dgvThongTin
-            DataTable tb = dalHD.ThongTinThanhToan(cmbMahd.Text);
-            dgvThongtin.DataSource = tb;
-            dtpNgayVao.Text = cn.GetValue(@"select NgayVao from tblHoaDon where MaHD = '" + cmbMahd.Text + "'");
-            string ngayra = cn.GetValue(@"select NgayRa from tblHoaDon where MaHD = '" + cmbMahd.Text + "'");
-            if (ngayra != "01/01/1900 12:00:00 AM")
-            {
-                dtpNgayra.Text = ngayra;
-                dtpNgayra.Enabled = false;
-            }
-            else
-            {
-                dtpNgayra.ResetText();
-                dtpNgayra.Enabled = true;
-            }
-        }
+        
 
         private void btnThanhtoan_Click(object sender, EventArgs e)
         {
