@@ -98,25 +98,25 @@ namespace TTN_QuanLyKhachSan
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult xacnhan;
-            xacnhan = MessageBox.Show("Bạn có chắc chắn muốn xóa không??", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (xacnhan == DialogResult.OK)
-            {
-                ec_Ph.MaPh = txtMaPhong.Text;
-                if (dal_Ph.XoaTTPhong(ec_Ph) == 0)
-                {
+            //DialogResult xacnhan;
+            //xacnhan = MessageBox.Show("Bạn có chắc chắn muốn xóa không??", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            //if (xacnhan == DialogResult.OK)
+            //{
+            //    ec_Ph.MaPh = txtMaPhong.Text;
+            //    if (dal_Ph.XoaTTPhong(ec_Ph) == 0)
+            //    {
 
-                    MessageBox.Show("Không thể xoá!!!", "Thông báo???", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    dal_Ph.XoaTTPhong(ec_Ph);
-                    MessageBox.Show("Đã xóa thành công!");
-                    btnLamMoi_Click(sender, e);
-                    SetNull();
+            //        MessageBox.Show("Không thể xoá!!!", "Thông báo???", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            //    }
+            //    else
+            //    {
+            //        dal_Ph.XoaTTPhong(ec_Ph);
+            //        MessageBox.Show("Đã xóa thành công!");
+            //        btnLamMoi_Click(sender, e);
+            //        SetNull();
 
-                }
-            }
+            //    }
+            //}
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)

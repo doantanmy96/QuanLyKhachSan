@@ -37,39 +37,39 @@ namespace TTN_QuanLyKhachSan
 
         private void frmThuePhong_Load(object sender, EventArgs e)
         {
-            //_load = true;
-            //DateTime date = DateTime.Today.AddDays(0);
-            //dtpNgayvao.Value = date;
-            ////load dgvThongTin
-            //DataTable tb = dalPh.ThongTinPhong("");
-            //dgvThongtin.DataSource = tb;
-            //for (int i = 0; i < dgvThongtin.RowCount; i++)
-            //{
-            //    dgvThongtin.Rows[i].Cells["STT"].Value = i + 1;
-            //    if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Tốt") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.Lime;
-            //    else
-            //        if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Đã thuê") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.LightSkyBlue;
-            //    else
-            //            if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Hỏng") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-            //}
-            ////load smbKhachhang
-            //tb = cn.GetDataTable("Select distinct MaKH, tenKH from tblKhachHang");
-            //cmbKhachhang.DataSource = tb;
-            //cmbKhachhang.DisplayMember = "tenKH";
-            //txtMaKH.Text = findCode(cmbKhachhang.Text, "TenKH", "MaKH", tb);
+            _load = true;
+            DateTime date = DateTime.Today.AddDays(0);
+            dtpNgayvao.Value = date;
+            //load dgvThongTin
+            DataTable tb = dalPh.ThongTinPhong("");
+            dgvThongtin.DataSource = tb;
+            for (int i = 0; i < dgvThongtin.RowCount; i++)
+            {
+                dgvThongtin.Rows[i].Cells["STT"].Value = i + 1;
+                if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Tốt") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.Lime;
+                else
+                    if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Đã thuê") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.LightSkyBlue;
+                else
+                        if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Hỏng") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+            }
+            //load smbKhachhang
+            tb = cn.GetDataTable("Select distinct MaKH, tenKH from tblKhachHang");
+            cmbKhachhang.DataSource = tb;
+            cmbKhachhang.DisplayMember = "tenKH";
+            txtMaKH.Text = findCode(cmbKhachhang.Text, "TenKH", "MaKH", tb);
 
-            ////load Phuongthuc
-            //tb = cn.GetDataTable("Select distinct MaPT, TenPT from tblPhuongThucThue");
-            //cmbPhuongthuc.DataSource = tb;
-            //cmbPhuongthuc.DisplayMember = "TenPT";
-            //cmbPhuongthuc.ValueMember = "MaPT";
-            //cmbPhuongthuc.ResetText();
-            //txtMaPT.Text = findCode(cmbPhuongthuc.Text, "TenPT", "MaPT", tb);
+            //load Phuongthuc
+            tb = cn.GetDataTable("Select distinct MaPT, TenPT from tblPhuongThucThue");
+            cmbPhuongthuc.DataSource = tb;
+            cmbPhuongthuc.DisplayMember = "TenPT";
+            cmbPhuongthuc.ValueMember = "MaPT";
+            cmbPhuongthuc.ResetText();
+            txtMaPT.Text = findCode(cmbPhuongthuc.Text, "TenPT", "MaPT", tb);
 
-            ////lay dl vao ec
+            //lay dl vao ec
 
-            //ecHD.NgayVao = dtpNgayvao.Text;
-            //_load = false;
+            ecHD.NgayVao = dtpNgayvao.Text;
+            _load = false;
         }
 
         private void cmbKhachhang_SelectedIndexChanged(object sender, EventArgs e)
