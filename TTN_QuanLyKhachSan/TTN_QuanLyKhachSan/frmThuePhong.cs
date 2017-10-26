@@ -26,9 +26,9 @@ namespace TTN_QuanLyKhachSan
         {
             InitializeComponent();
         }
-        public static string findCode(string name, string columnSrc, string columnDes, DataTable tb)
+        public static string findCode(string name, string columnSrc,string columnDes ,DataTable tb)
         {
-            for (int i = 0; i < tb.Rows.Count; i++)
+            for (int i = 0; i < tb.Rows.Count; i++ )
             {
                 if (tb.Rows[i][columnSrc].ToString() == name) return tb.Rows[i][columnDes].ToString();
             }
@@ -43,13 +43,13 @@ namespace TTN_QuanLyKhachSan
             //load dgvThongTin
             DataTable tb = dalPh.ThongTinPhong("");
             dgvThongtin.DataSource = tb;
-            for (int i = 0; i < dgvThongtin.RowCount; i++)
+            for(int i = 0; i<dgvThongtin.RowCount; i++)
             {
-                dgvThongtin.Rows[i].Cells["STT"].Value = i + 1;
+                dgvThongtin.Rows[i].Cells["STT"].Value  = i+1;
                 if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Tốt") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.Lime;
                 else
                     if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Đã thuê") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.LightSkyBlue;
-                else
+                    else
                         if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Hỏng") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.Red;
             }
             //load smbKhachhang
@@ -57,11 +57,11 @@ namespace TTN_QuanLyKhachSan
             cmbKhachhang.DataSource = tb;
             cmbKhachhang.DisplayMember = "tenKH";
             txtMaKH.Text = findCode(cmbKhachhang.Text, "TenKH", "MaKH", tb);
-
+            
             //load Phuongthuc
             tb = cn.GetDataTable("Select distinct MaPT, TenPT from tblPhuongThucThue");
             cmbPhuongthuc.DataSource = tb;
-            cmbPhuongthuc.DisplayMember = "TenPT";
+            cmbPhuongthuc.DisplayMember= "TenPT";
             cmbPhuongthuc.ValueMember = "MaPT";
             cmbPhuongthuc.ResetText();
             txtMaPT.Text = findCode(cmbPhuongthuc.Text, "TenPT", "MaPT", tb);
@@ -88,9 +88,9 @@ namespace TTN_QuanLyKhachSan
 
         private void btnThue_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < dgvThongtin.RowCount; i++)
+            for(int i = 0; i<dgvThongtin.RowCount; i++)
             {
-                if (Convert.ToBoolean(dgvThongtin.Rows[i].Cells["Thue"].Value) == true)
+                if(Convert.ToBoolean(dgvThongtin.Rows[i].Cells["Thue"].Value)== true)
                 {
                     if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Đã thuê")
                     {
@@ -138,7 +138,7 @@ namespace TTN_QuanLyKhachSan
                 if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Tốt") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.Lime;
                 else
                     if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Đã thuê") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.LightSkyBlue;
-                else
+                    else
                         if (dgvThongtin.Rows[i].Cells["TrangThai"].Value.ToString() == "Hỏng") dgvThongtin.Rows[i].DefaultCellStyle.BackColor = Color.Red;
             }
         }
@@ -150,7 +150,7 @@ namespace TTN_QuanLyKhachSan
             {
                 _Gia = cn.GetValue("select DonGia from tblPhuongThucThue where MaPT = '" + cmbPhuongthuc.SelectedValue.ToString() + "'");
             }
-            txtMaPT.Text = findCode(cmbPhuongthuc.Text, "TenPT", "MaPT", tb);
+            txtMaPT.Text = findCode(cmbPhuongthuc.Text, "TenPT", "MaPT", tb);  
             if (cmbPhuongthuc.Text == "Qua đêm")
             {
                 DateTime dateOut = dtpNgayvao.Value;

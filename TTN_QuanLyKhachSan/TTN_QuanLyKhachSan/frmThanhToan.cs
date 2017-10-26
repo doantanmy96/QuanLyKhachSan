@@ -71,12 +71,12 @@ namespace TTN_QuanLyKhachSan
         private void btnThanhtoan_Click(object sender, EventArgs e)
         {
             int sum = 0;
-            for (int i = 0; i < dgvThongtin.Rows.Count; i++)
+            for (int i = 0;i<dgvThongtin.Rows.Count;i++)
             {
                 sum += int.Parse(dgvThongtin.Rows[i].Cells["Gia"].Value.ToString());
             }
             _Gia = int.Parse(cn.GetValue(@"select DonGiaHT from tblHoaDon where MaHD = '" + cmbMahd.Text + "'"));
-            sum += getCost(dtpNgayVao.Value, dtpNgayra.Value, _Gia);
+            sum += getCost(dtpNgayVao.Value,dtpNgayra.Value,_Gia);
             MessageBox.Show("Tổng số tiền thanh toán: " + sum.ToString());
             //update hoa don
             ecHD.ThanhTien = sum.ToString();

@@ -104,7 +104,7 @@
             this.cboMaPh.Name = "cboMaPh";
             this.cboMaPh.Size = new System.Drawing.Size(197, 21);
             this.cboMaPh.TabIndex = 6;
-         
+            this.cboMaPh.TextChanged += new System.EventHandler(this.cboMaPh_TextChanged);
             // 
             // txtSoLuong
             // 
@@ -173,7 +173,7 @@
             this.btnCapNhap.TabIndex = 13;
             this.btnCapNhap.Text = "Cập nhập";
             this.btnCapNhap.UseVisualStyleBackColor = true;
-          
+            this.btnCapNhap.Click += new System.EventHandler(this.btnCapNhap_Click);
             // 
             // btnThoat
             // 
@@ -183,7 +183,7 @@
             this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
-            
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLuu
             // 
@@ -193,7 +193,7 @@
             this.btnLuu.TabIndex = 11;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
-         
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -203,7 +203,7 @@
             this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
-            
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -213,7 +213,8 @@
             this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
-           
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
             // btnThem
             // 
             this.btnThem.Location = new System.Drawing.Point(23, 125);
@@ -222,7 +223,7 @@
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
-            
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // dgvDanhSach
             // 
@@ -247,7 +248,8 @@
             this.dgvDanhSach.Name = "dgvDanhSach";
             this.dgvDanhSach.Size = new System.Drawing.Size(664, 220);
             this.dgvDanhSach.TabIndex = 1;
-          
+            this.dgvDanhSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellClick);
+            // 
             // colMaPh
             // 
             this.colMaPh.DataPropertyName = "MaPh";
@@ -285,7 +287,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmThietBi";
             this.Text = "Quản lý thiết bị";
-           
+            this.Load += new System.EventHandler(this.frmThietBi_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
