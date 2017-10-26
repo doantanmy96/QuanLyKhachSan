@@ -8,3 +8,8 @@ D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\bin\Debug\Entity.pdb
 D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
 D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\obj\Debug\Entity.dll
 D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\obj\Debug\Entity.pdb
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\bin\Debug\Entity.dll
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\bin\Debug\Entity.pdb
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\obj\Debug\Entity.dll
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\Entity\obj\Debug\Entity.pdb
