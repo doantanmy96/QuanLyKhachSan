@@ -172,7 +172,7 @@
             this.cmbKhachhang.Name = "cmbKhachhang";
             this.cmbKhachhang.Size = new System.Drawing.Size(137, 21);
             this.cmbKhachhang.TabIndex = 0;
-      
+            this.cmbKhachhang.SelectedIndexChanged += new System.EventHandler(this.cmbKhachhang_SelectedIndexChanged);
             // 
             // cmbMahd
             // 
@@ -181,7 +181,7 @@
             this.cmbMahd.Name = "cmbMahd";
             this.cmbMahd.Size = new System.Drawing.Size(137, 21);
             this.cmbMahd.TabIndex = 1;
-          
+            this.cmbMahd.SelectedIndexChanged += new System.EventHandler(this.cmbMahd_TextChanged);
             // 
             // label5
             // 
@@ -226,7 +226,7 @@
             this.btnThanhtoan.TabIndex = 3;
             this.btnThanhtoan.Text = "Thanh toán";
             this.btnThanhtoan.UseVisualStyleBackColor = true;
-          
+            this.btnThanhtoan.Click += new System.EventHandler(this.btnThanhtoan_Click);
             // 
             // btnThoat
             // 
@@ -265,7 +265,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmThanhToan";
             this.Text = "Thanh Toán";
-         
+            this.Load += new System.EventHandler(this.frmThanhToan_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongtin)).EndInit();
             this.grbThuephong.ResumeLayout(false);

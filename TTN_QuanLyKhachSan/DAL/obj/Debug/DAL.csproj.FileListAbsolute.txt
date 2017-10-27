@@ -19,3 +19,10 @@ D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.pdb
 D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.dll
 D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.dll
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.pdb
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.dll
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.pdb
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.dll
+E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.pdb

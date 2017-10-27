@@ -51,7 +51,7 @@ namespace TTN_QuanLyKhachSan
         }
         private void DoDLMaLop()
         {
-
+  
             cboMaPh.DataSource = dal_tb.TruyVanRaMaPh("");
             cboMaPh.DisplayMember = "MaPh";
         }
@@ -117,7 +117,7 @@ namespace TTN_QuanLyKhachSan
             {
                 ec.MaPh = cboMaPh.Text;
                 ec.ThietBi = txtThietBi.Text;
-                if (dal_tb.XoaTTThietBi(ec) == 0)
+                if (dal_tb.XoaTTThietBi(ec)==0 )
                 {
 
                     MessageBox.Show("Không thể xoá!!!", "Thông báo???", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
@@ -135,7 +135,7 @@ namespace TTN_QuanLyKhachSan
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (txtThietBi.Text == "" || txtSoLuong.Text == "" || txtNhaSanXuat.Text == "" || cboMaPh.Text == "")
+            if (txtThietBi.Text == "" || txtSoLuong.Text == "" || txtNhaSanXuat.Text == ""||cboMaPh.Text=="" )
             {
                 MessageBox.Show("Xin mời nhập thông tin đầy đủ");
                 KhoaDieuKhien();
@@ -148,7 +148,7 @@ namespace TTN_QuanLyKhachSan
                     try
                     {
                         ec.ThietBi = txtThietBi.Text;
-                        ec.MaPh = cboMaPh.Text;
+                        ec.MaPh= cboMaPh.Text;
                         ec.SoLuong = int.Parse(txtSoLuong.Text);
                         ec.NhaSanXuat = txtNhaSanXuat.Text;
 

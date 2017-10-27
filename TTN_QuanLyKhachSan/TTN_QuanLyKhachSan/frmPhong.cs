@@ -63,7 +63,7 @@ namespace TTN_QuanLyKhachSan
 
         private void dgvDanhSach_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int dong = e.RowIndex;/*biến dòng :kich vào dòng thì chỉ số dòng đc lưu vào biến dòng */
+            int dong = e.RowIndex;/*biến dòng :kich vào dòng thì chỉ số dòng đc lưu vào biến dòng */              
             txtMaPhong.Text = dgvDanhSach.Rows[dong].Cells[0].Value.ToString();
             txtSoPhong.Text = dgvDanhSach.Rows[dong].Cells[1].Value.ToString();
             txtTrangThai.Text = dgvDanhSach.Rows[dong].Cells[2].Value.ToString();
@@ -92,7 +92,7 @@ namespace TTN_QuanLyKhachSan
 
             btnLuu.Enabled = true;
             MoChucNang();
-            txtMaPhong.ReadOnly = true;
+            txtMaPhong.ReadOnly = true;           
             themmoi = false;
         }
 
@@ -102,7 +102,7 @@ namespace TTN_QuanLyKhachSan
             xacnhan = MessageBox.Show("Bạn có chắc chắn muốn xóa không??", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (xacnhan == DialogResult.OK)
             {
-                ec_Ph.MaPh = txtMaPhong.Text;
+                ec_Ph.MaPh = txtMaPhong.Text;                
                 if (dal_Ph.XoaTTPhong(ec_Ph) == 0)
                 {
 
@@ -127,7 +127,7 @@ namespace TTN_QuanLyKhachSan
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (txtMaPhong.Text == "" || txtSoPhong.Text == "" || txtTrangThai.Text == "")
+            if (txtMaPhong.Text == "" || txtSoPhong.Text == "" || txtTrangThai.Text == "" )
             {
                 MessageBox.Show("Xin mời nhập thông tin đầy đủ");
                 KhoaChucNang();
@@ -142,7 +142,7 @@ namespace TTN_QuanLyKhachSan
                         ec_Ph.MaPh = txtMaPhong.Text;
                         ec_Ph.SoPhong = txtSoPhong.Text;
                         ec_Ph.TrangThai = txtTrangThai.Text;
-
+                        
 
                         dal_Ph.ThemThongTin(ec_Ph);
                         MessageBox.Show("Đã thêm mới thành công");/*dòng thông báo*/
@@ -169,7 +169,7 @@ namespace TTN_QuanLyKhachSan
                         ec_Ph.SoPhong = txtSoPhong.Text;
                         ec_Ph.TrangThai = txtTrangThai.Text;
                         dal_Ph.SuaThongTin(ec_Ph);
-                        MessageBox.Show("Đã sửa thành công");
+                        MessageBox.Show("Đã sửa thành công");                      
                         btnLamMoi_Click(sender, e);
                         MoChucNang();
                         btnThem.Enabled = true;

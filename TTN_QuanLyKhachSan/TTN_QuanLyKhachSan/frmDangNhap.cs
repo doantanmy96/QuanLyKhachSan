@@ -50,7 +50,7 @@ namespace TTN_QuanLyKhachSan
 
         private void frmDangNhap_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) btn_DangNhap_Click(null, null);
+            if (e.KeyCode == Keys.Enter) btn_DangNhap_Click(null,null);
         }
 
         private void chkLuuTK_CheckedChanged(object sender, EventArgs e)
