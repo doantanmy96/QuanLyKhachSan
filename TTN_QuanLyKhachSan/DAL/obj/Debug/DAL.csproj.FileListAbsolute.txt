@@ -26,3 +26,10 @@ E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.pdb
 E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.dll
 E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.dll
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.pdb
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.dll
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.pdb
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.dll
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.pdb

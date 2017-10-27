@@ -77,11 +77,9 @@ D:\c#\ttnhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\
 D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
 D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 D:\c#\ttnhom\TTN_QuanLyKhachSan - Copy\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
-<<<<<<< HEAD
 D:\GITHUB\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
 D:\GITHUB\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 D:\GITHUB\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
-=======
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\bin\Debug\TTN_QuanLyKhachSan.exe.config
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.exe
 C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.pdb
@@ -96,3 +94,17 @@ E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_
 >>>>>>> e1bdf79dcfef3596a5ef9dc37333fd46d7fb2423
 E:\forgithub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.csprojResolveAssemblyReference.cache
 >>>>>>> 8785fa5841f2235c416bcaa4233216024a2c9d33
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.csprojResolveAssemblyReference.cache
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmDangNhap.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmHelp.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmMain.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmPhong.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmQuanLyDV.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmQuanLyKhachHang.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmQuanLyNguoiDung.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmSuDungDV.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmThanhToan.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmThietBi.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.frmThuePhong.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.Properties.Resources.resources
+C:\Users\FPTShop\Documents\GitHub\QuanLyKhachSan\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\obj\Debug\TTN_QuanLyKhachSan.csproj.GenerateResource.Cache

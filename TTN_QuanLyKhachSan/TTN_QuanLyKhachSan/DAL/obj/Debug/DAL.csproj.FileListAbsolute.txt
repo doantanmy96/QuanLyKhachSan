@@ -1,0 +1,21 @@
+F:\Hoc tap\Thuc tap nhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\Hoc tap\Thuc tap nhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.pdb
+D:\GitHub\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.dll
+D:\GitHub\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.pdb
+D:\GitHub\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.dll
+D:\GitHub\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.pdb
+D:\GitHub\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\GitHub\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.dll
+D:\GitHub\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
+D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.dll
+D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\DAL.pdb
+D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.dll
+D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\bin\Debug\Entity.pdb
+D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.dll
+D:\c#\TTN_QuanLyKhachSan\TTN_QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
