@@ -1,6 +1,6 @@
 ﻿namespace TTN_QuanLyKhachSan
 {
-    partial class frmQuanLyDV
+    partial class frmSuDungDV
     {
         /// <summary>
         /// Required designer variable.
